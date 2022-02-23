@@ -702,8 +702,8 @@ public:
       }
     }
     // Extend
-    if ((controller_time % 32) == 0)
-    {
+    //if ((controller_time % 32) == 0)
+    //{
       int    fd;
       long   size, pagesize;
       const char *mm;
@@ -752,7 +752,7 @@ public:
         }
       }
       close(fd);
-    }
+    //}
     if (benchmark_level >= 4 && active_sensor != "") {
       std::cout << "\t\t" << active_sensor << " update time " << duration(sc::now() - sensor_start).count() << "ms"
                 << std::endl;
